@@ -1,6 +1,6 @@
 import numpy as np
 
-from pymoo.util.non_dominated_sorting import NonDominatedSorting
+from pymoo.util.nds.non_dominated_sorting import NonDominatedSorting
 from pymoo.util.randomized_argsort import randomized_argsort
 
 

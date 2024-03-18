@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "so",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "args": [   "--n_runs",
+                        "21",
+                        "--warm_up",
+                        "0",
+                        "--nSamples_for_warm_up",
+                        "0",
+                        "--problem_name",
+                        "[problem_name]",
+                        "--algorithm_name",
+                        "GA",
+                        "--seed",
+                        "0"
+                    ]
+        },
+        {
+            "name": "mo",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "args": [   "--n_runs",
+                        "21",
+                        "--warm_up",
+                        "0",
+                        "--nSamples_for_warm_up",
+                        "0",
+                        "--problem_name",
+                        "MO-NAS201-1",
+                        "--algorithm_name",
+                        "NSGA-II",
+                        "--seed",
+                        "0"
+                    ]
+        }
+    ]
+}

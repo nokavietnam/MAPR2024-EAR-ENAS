@@ -1,0 +1,10 @@
+# python_version==3.9
+pymoo==0.6.1.1
+absl-py==2.1.0
+ConfigSpace==0.7.1
+pathvalidate==3.2.0
+fvcore==0.1.5.post20221221
+pytorch==1.13.1 
+torchvision==0.14.1 
+torchaudio==0.13.1
+matplotlib==3.8.3

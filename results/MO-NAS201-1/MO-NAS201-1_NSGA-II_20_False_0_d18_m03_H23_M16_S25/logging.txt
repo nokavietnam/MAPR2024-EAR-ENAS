@@ -1,0 +1,19 @@
+******* PROBLEM *******
+- Benchmark: NASBench201
+- Dataset: CIFAR-10
+- Maximum number of evaluations: 3000
+- List of objectives: ['FLOPs', 'val_error']
+
+******* ALGORITHM *******
+- Algorithm: NSGA-II
+- Population size: 20
+- Crossover method: 2X
+- Mutation method: Bit-string
+- Selection method: Rank And Crowding Survival
+
+******* ENVIRONMENT *******
+- Number of running experiments: 21
+- Random seed each run: [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000]
+- Path for saving results: G:\Master\MAPR2024-EAR-ENAS/results/MO-NAS201-1/MO-NAS201-1_NSGA-II_20_False_0_d18_m03_H23_M16_S25
+- Debug: False
+
