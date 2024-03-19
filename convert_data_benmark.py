@@ -6,10 +6,13 @@ import numpy as np
 
 list_ops = np.array(['none', 'skip_connect', 'nor_conv_1x1', 'nor_conv_3x3', 'avg_pool_3x3'])
 
-
+# convert 
+# {'nb201-string': '|avg_pool_3x3~0|+|nor_conv_1x1~0|skip_connect~1|+|nor_conv_1x1~0|skip_connect~1|skip_connect~2|', 'isomorph': '0'} 
+# to 
+# 421211
 def decode_arch(arch):
     return ''.join(
-        str(np.where(list_ops == item.split('~')[0])[0][0]) for item in filter(None, arch.split('|')) if item != '+')
+        str(np.nonzero(list_ops == item.split('~')[0])[0][0]) for item in filter(None, arch.split('|')) if item != '+')
 
 def main(noise, dataset):
     data_pdg = json.load(open(f'data/robustness-data/{dataset}/{noise}@Linf_accuracy.json', 'r'))
@@ -32,7 +35,7 @@ def main(noise, dataset):
         print(f'{item} - {data_result[item]}')
         break
 
-    p.dump(data_result, open(f'result/data_{noise}_acc.p', 'wb'))
+    #p.dump(data_result, open(f'data/robustness/result/data_{noise}_acc.p', 'wb'))
 
 
 if __name__ == '__main__':
