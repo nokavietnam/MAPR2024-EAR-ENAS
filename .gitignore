@@ -5,4 +5,3 @@ data/**/*.p
 data/dataset/*
 data/cifar-10-batches-py/*
 result/*
-results/**/**
