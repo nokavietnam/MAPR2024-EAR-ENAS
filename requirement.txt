@@ -9,3 +9,4 @@ torchvision==0.14.1
 torchaudio==0.13.1
 matplotlib==3.8.3
 notebook
+ipykernel

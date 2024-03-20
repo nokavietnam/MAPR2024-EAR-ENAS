@@ -1,8 +1,9 @@
-
-data/**/*.json
+!data/
 data/**/*.json
 data/**/*.p
 data/dataset/*
 data/cifar-10-batches-py/*
+!data/images/
+data/images/*
 !results/
 results/*
