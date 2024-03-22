@@ -59,4 +59,4 @@ def main(eps):
 
 
 if __name__ == '__main__':
-    main(0.001)
+    main(0.5)
